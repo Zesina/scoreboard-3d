@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+                <div class="htop">
+                <h3 >HOME</h3>
+                <div>
+                <h1 id="score1"> 0 </h1>
+                </div>
+                
+                
+                <div class="btn-press">
+                     <button id="s1" onclick="incr('score1', 1)">+1</button>
+                     <button id="s2" onclick="incr('score1', 2)"">+2</button>
+                     <button id="s3" onclick="incr('score1', 3)"">+3</button>
+                </div>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <div>
+                <h1 id="score2"> 0 </h1>
+                </div>
+                <button id="gu1" onclick="incr('score2', 1)">+1</button>
+                <button id="gu2" onclick="incr('score2', 2)">+2</button>
+                <button id ="gu3" onclick="incr('score2', 3)">+3</button>
+               </div>
+        </div>
+        <button id = "reset" onclick="rst()"> RESET SCORE </button>
+        <script src="index.js"></script>
+    </body>
+</html>
